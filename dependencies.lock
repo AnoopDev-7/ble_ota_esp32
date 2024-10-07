@@ -1,0 +1,63 @@
+dependencies:
+  ble_ota:
+    dependencies:
+    - name: idf
+      version: '>=4.4'
+    - name: espressif/esp_encrypted_img
+      version: ^2.0.1
+    - name: espressif/cmake_utilities
+      version: 0.*
+    source:
+      path: D:\ble_ota\components\bluetooth\ble_profiles\esp\ble_ota
+      type: local
+    targets:
+    - esp32
+    - esp32c3
+    - esp32h2
+    - esp32s3
+    - esp32c2
+    - esp32c6
+    version: 0.1.12
+  espressif/cmake_utilities:
+    component_hash: 351350613ceafba240b761b4ea991e0f231ac7a9f59a9ee901f751bddc0bb18f
+    dependencies:
+    - name: idf
+      require: private
+      version: '>=4.1'
+    source:
+      registry_url: https://components.espressif.com/
+      type: service
+    version: 0.5.3
+  espressif/esp_encrypted_img:
+    component_hash: 862203d8c66a9fb2d81433d83dbc6179081a425a28fd2f09ffec72571f936bdf
+    dependencies:
+    - name: idf
+      require: private
+      version: '>=4.4'
+    source:
+      registry_url: https://components.espressif.com/
+      type: service
+    version: 2.2.1
+  espressif/xz:
+    component_hash: 9a556b2c7f7450af379d28c6c1e999595ffeacddf11d4388fe869060f6fa2dab
+    dependencies:
+    - name: idf
+      require: private
+      version: '>=4.1'
+    source:
+      registry_url: https://components.espressif.com/
+      type: service
+    version: 1.0.0
+  idf:
+    source:
+      type: idf
+    version: 5.2.2
+direct_dependencies:
+- ble_ota
+- espressif/cmake_utilities
+- espressif/esp_encrypted_img
+- espressif/xz
+- idf
+manifest_hash: 5f1e8f6156aa236549980cee39c812d757a34179bc69165097e2847849c19b87
+target: esp32
+version: 2.0.0

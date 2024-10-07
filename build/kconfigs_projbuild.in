@@ -1,0 +1,7 @@
+source "D:/AnoopKumarDriveallData/v5.2.2/esp-idf/components/bootloader/Kconfig.projbuild"
+source "D:/AnoopKumarDriveallData/v5.2.2/esp-idf/components/esp_app_format/Kconfig.projbuild"
+source "D:/AnoopKumarDriveallData/v5.2.2/esp-idf/components/esp_rom/Kconfig.projbuild"
+source "D:/AnoopKumarDriveallData/v5.2.2/esp-idf/components/esptool_py/Kconfig.projbuild"
+source "D:/AnoopKumarDriveallData/v5.2.2/esp-idf/components/partition_table/Kconfig.projbuild"
+source "D:/ble_ota/main/Kconfig.projbuild"
+source "D:/ble_ota/components/bootloader_support_plus/Kconfig.projbuild"
